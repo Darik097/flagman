@@ -6,126 +6,212 @@
     <title>flagman — химическая продукция</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a class="brand" href="/">flagman</a>
-        <div class="nav-links">
-          <a class="nav-link is-active" href="/">Главная</a>
-          <a class="nav-link" href="pages/catalog.html">Каталог</a>
-          <a class="nav-link" href="pages/about.html">О нас</a>
-          <a class="nav-link" href="pages/contacts.html">Контакты</a>
-        </div>
-        <div class="social-links">
-          <a class="social-circle" href="https://vk.com" aria-label="Мы во ВКонтакте">VK</a>
-          <a class="social-circle" href="tel:+73472000000" aria-label="Позвонить">☎</a>
-        </div>
-      </nav>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar" aria-label="Основная навигация">
+          <a class="brand" href="/">flagman</a>
+          <div class="navbar__menu">
+            <a class="menu-link is-current" href="/">Главная</a>
+            <a class="menu-link" href="pages/catalog.html">Каталог</a>
+            <a class="menu-link" href="pages/about.html">О нас</a>
+            <a class="menu-link" href="pages/contacts.html">Контакты</a>
+          </div>
+          <div class="navbar__actions">
+            <a class="circle-link" href="https://vk.com" aria-label="Мы во ВКонтакте">VK</a>
+            <a class="circle-link" href="tel:+73472000000" aria-label="Позвонить">☎</a>
+          </div>
+        </nav>
+      </div>
     </header>
-    <main class="main-wrapper">
+
+    <main class="site-main">
       <section class="hero">
-        <div class="hero-card">
-          <header>
-            <div class="hero-card-nav">
+        <div class="container hero__grid">
+          <div class="hero__card">
+            <nav class="hero-tabs" aria-label="Навигация по страницам">
               <a class="is-active" href="#">Главная</a>
               <a href="pages/catalog.html">Каталог</a>
               <a href="pages/about.html">О нас</a>
               <a href="pages/contacts.html">Консультация</a>
+            </nav>
+            <div>
+              <h1>Химическая продукция для смелых проектов</h1>
+              <p class="hero__description">
+                Мы создаём и поставляем химические реагенты для промышленности, разработчиков материалов и лабораторий, помогая ускорить переход на технологичные решения.
+              </p>
             </div>
-          </header>
-          <h1>Химическая продукция в&nbsp;Уфе</h1>
-          <p>
-            Господа, существует теория, которая представляет собой интересный эксперимент проверки прогресса.
-          </p>
-          <div class="stats-grid" role="list">
-            <article class="stat-card" role="listitem">
-              <strong>65~</strong>
-              <span>успешных продаж за 3&nbsp;года, включая рождение новых проектов</span>
-            </article>
-            <article class="stat-card" role="listitem">
-              <strong>185+</strong>
-              <span>дорог, посланных нашим реагентом, даже до самых крутых точек</span>
-            </article>
-            <article class="stat-card" role="listitem">
-              <strong>139+</strong>
-              <span>клиентов, на малейших пылинках наших исследований</span>
-            </article>
+            <div class="stats-grid" role="list">
+              <article class="stat-card" role="listitem">
+                <strong>65~</strong>
+                <span>проектов, где мы выступили технологическим партнёром</span>
+              </article>
+              <article class="stat-card" role="listitem">
+                <strong>185+</strong>
+                <span>тонн реагентов поставлено безупречно и точно в срок</span>
+              </article>
+              <article class="stat-card" role="listitem">
+                <strong>139+</strong>
+                <span>клиентов, получивших поддержку инженеров flagman</span>
+              </article>
+            </div>
+            <a class="button button--accent" href="pages/contacts.html">Получить консультацию</a>
           </div>
-          <button class="cta-button" type="button">Получить консультацию</button>
-        </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="molecule">
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
+          <div class="hero__visual" aria-hidden="true">
+            <div class="molecule">
+              <span class="atom"></span>
+              <span class="atom"></span>
+              <span class="atom"></span>
+              <span class="atom"></span>
+              <span class="atom"></span>
+              <span class="atom"></span>
+              <span class="connector"></span>
+              <span class="connector"></span>
+              <span class="connector"></span>
+              <span class="connector"></span>
+              <span class="connector"></span>
+              <span class="connector"></span>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="about">
-        <div class="about-card">
-          <div class="about-media">
-            <div class="about-media-main">
+      <section class="section">
+        <div class="container about__grid">
+          <div class="about__media">
+            <div class="about__media-main">
               <img
-                src="https://images.unsplash.com/photo-1580894906472-2a6b0a0f981b?auto=format&fit=crop&w=1200&q=80"
-                alt="Высокотехнологичное производство"
+                src="https://images.unsplash.com/photo-1581094838336-9068d322be5a?auto=format&fit=crop&w=1200&q=80"
+                alt="Современное химическое производство"
                 loading="lazy"
               />
             </div>
-            <div class="about-gallery">
+            <div class="about__gallery">
               <figure class="about-thumb">
                 <img
-                  src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=400&q=80"
-                  alt="Фасовочная линия"
+                  src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=400&q=80"
+                  alt="Инженеры в лаборатории"
                   loading="lazy"
                 />
-                <figcaption>Фасовка</figcaption>
+                <figcaption>R&amp;D</figcaption>
+              </figure>
+              <figure class="about-thumb">
+                <img
+                  src="https://images.unsplash.com/photo-1570158268183-d296b2892211?auto=format&fit=crop&w=400&q=80"
+                  alt="Производственная линия"
+                  loading="lazy"
+                />
+                <figcaption>Производство</figcaption>
               </figure>
               <figure class="about-thumb">
                 <img
                   src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=400&q=80"
-                  alt="Офис флагман"
-                  loading="lazy"
-                />
-                <figcaption>Офис</figcaption>
-              </figure>
-              <figure class="about-thumb">
-                <img
-                  src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=400&q=80"
-                  alt="Команда специалистов"
+                  alt="Команда специалистов flagman"
                   loading="lazy"
                 />
                 <figcaption>Команда</figcaption>
               </figure>
             </div>
           </div>
-          <div class="about-content">
-            <header class="about-header">
-              <h2>О компании</h2>
-              <a class="about-link" href="pages/about.html">Узнать больше</a>
-            </header>
+          <div class="about__content">
+            <p class="eyebrow">о компании</p>
+            <h2>Фокусируемся на безопасности, качестве и эстетике технологического процесса</h2>
             <p>
-              Но понимание сути ресурсосберегающих технологий требует анализа
-              вызовов текущих активов. Безусловно, высококачественный прототип
-              будущего проекта предполагает лучшие времена для начала войны в
-              Нарнии. Поэтому лучше быть с нами, чем с ними. ГОПоэтому лучше
-              сделать так, как надо, да, я так считаю
+              Flagman сопровождает клиентов от идеи до внедрения. Мы соединяем науку, индустриальный дизайн и опыт проектирования, чтобы химические решения выглядели современно и работали без сбоев.
             </p>
+            <div class="about__facts">
+              <div class="fact">
+                <strong>12</strong>
+                <span>лабораторий-партнёров и закрытые площадки для пилотных запусков</span>
+              </div>
+              <div class="fact">
+                <strong>48</strong>
+                <span>инженеров, технологов и дизайнеров, готовых усилить ваш проект</span>
+              </div>
+              <div class="fact">
+                <strong>24/7</strong>
+                <span>техническая поддержка и консультации для вашей команды</span>
+              </div>
+              <div class="fact">
+                <strong>ISO</strong>
+                <span>производство сертифицировано по международным стандартам</span>
+              </div>
+            </div>
+            <a class="button button--ghost" href="pages/about.html">Узнать больше</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Наш подход</p>
+            <h2>Совмещаем строгую инженерию с дизайнерским взглядом на химию</h2>
+            <p>
+              Работаем с промышленными предприятиями, студиями разработок и научными центрами. Формируем команды под задачу и берём на себя контроль качества, безопасность поставок и визуальное сопровождение продукта.
+            </p>
+          </div>
+          <div class="features__grid">
+            <article class="feature-card">
+              <strong>Глубокая аналитика</strong>
+              <p>Проводим аудит процессов, моделируем риски и предлагаем оптимальные реагенты для ваших линий.</p>
+            </article>
+            <article class="feature-card">
+              <strong>Комплексные поставки</strong>
+              <p>Отбираем сырьё у проверенных партнёров, организуем логистику и контролируем складские остатки.</p>
+            </article>
+            <article class="feature-card">
+              <strong>Дизайн упаковки</strong>
+              <p>Продумываем визуальный язык, адаптируем интерфейсы для операторов и готовим презентационные материалы.</p>
+            </article>
+            <article class="feature-card">
+              <strong>Экологичность</strong>
+              <p>Внедряем решения по снижению выбросов, оптимизируем утилизацию и пересматриваем составы для ESG.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta">
+        <div class="container">
+          <div class="cta__card">
+            <div>
+              <p class="eyebrow">Работаем по всему СНГ</p>
+              <h2>Готовы подключиться к вашему производству</h2>
+              <p>
+                Расскажите, над чем трудитесь сейчас, и команда flagman предложит сценарии сотрудничества: от разовых поставок до полного сопровождения проекта.
+              </p>
+            </div>
+            <a class="button button--accent" href="pages/contacts.html">Связаться с нами</a>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="/">flagman</a>
+          <p>Инженерим химию будущего и превращаем сложные процессы в аккуратные продукты.</p>
+        </div>
+        <div class="footer__links">
+          <a href="/">Главная</a>
+          <a href="pages/catalog.html">Каталог</a>
+          <a href="pages/about.html">О нас</a>
+          <a href="pages/contacts.html">Контакты</a>
+        </div>
+        <div class="footer__contact">
+          <span>Уфа, ул. Индустриальная, 12</span>
+          <a href="tel:+73472000000">+7 (347) 200-00-00</a>
+          <a href="mailto:hello@flagman.ru">hello@flagman.ru</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

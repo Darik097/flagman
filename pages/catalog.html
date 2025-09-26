@@ -6,65 +6,156 @@
     <title>Каталог — flagman</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a class="brand" href="../index.html">flagman</a>
-        <div class="nav-links">
-          <a class="nav-link" href="../index.html">Главная</a>
-          <a class="nav-link is-active" href="catalog.html">Каталог</a>
-          <a class="nav-link" href="about.html">О нас</a>
-          <a class="nav-link" href="contacts.html">Контакты</a>
-        </div>
-        <div class="social-links">
-          <a class="social-circle" href="https://vk.com">VK</a>
-          <a class="social-circle" href="tel:+73472000000">☎</a>
-        </div>
-      </nav>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar" aria-label="Основная навигация">
+          <a class="brand" href="../index.html">flagman</a>
+          <div class="navbar__menu">
+            <a class="menu-link" href="../index.html">Главная</a>
+            <a class="menu-link is-current" href="catalog.html">Каталог</a>
+            <a class="menu-link" href="about.html">О нас</a>
+            <a class="menu-link" href="contacts.html">Контакты</a>
+          </div>
+          <div class="navbar__actions">
+            <a class="circle-link" href="https://vk.com" aria-label="Мы во ВКонтакте">VK</a>
+            <a class="circle-link" href="tel:+73472000000" aria-label="Позвонить">☎</a>
+          </div>
+        </nav>
+      </div>
     </header>
-    <main class="main-wrapper">
-      <section class="hero">
-        <div class="hero-card">
-          <h1>Каталог продукции</h1>
-          <p>
-            Мы готовим полный список решений для нефтехимии, машиностроения и фармацевтики. Скоро здесь появится интерактивный каталог.
-          </p>
-          <div class="stats-grid">
-            <article class="stat-card">
-              <strong>24</strong>
-              <span>актуальных сегмента рынка</span>
+
+    <main class="site-main">
+      <section class="page-hero">
+        <div class="container page-hero__layout">
+          <div class="page-hero__card">
+            <p class="eyebrow">Каталог</p>
+            <h1>Портфель химических решений</h1>
+            <p>
+              Мы подбираем сырьё и производим реагенты под конкретные задачи отрасли. Каталог постоянно дополняется благодаря совместным исследованиям с партнёрами и лабораториями.
+            </p>
+            <div class="badge-list" role="list">
+              <span class="badge" role="listitem">350+ позиций</span>
+              <span class="badge" role="listitem">24 сегмента рынка</span>
+              <span class="badge" role="listitem">Индивидуальные формулы</span>
+            </div>
+          </div>
+          <div class="page-hero__card">
+            <strong>Сферы применения</strong>
+            <p>Наша продукция закрывает потребности индустрий от нефтехимии до foodtech. Ниже — основные направления поставок.</p>
+            <div class="values-grid">
+              <div class="values-card">
+                <strong>Нефтехимия</strong>
+                <p>Катализаторы, ингибиторы коррозии, присадки к топливу.</p>
+              </div>
+              <div class="values-card">
+                <strong>Машиностроение</strong>
+                <p>Охлаждающие жидкости, смазки и составы для обработки металлов.</p>
+              </div>
+              <div class="values-card">
+                <strong>Фармацевтика</strong>
+                <p>Чистые растворители, лабораторные реактивы и расходники.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Популярные категории</p>
+            <h2>Подборка решений для быстрого старта</h2>
+            <p>Готовые к внедрению линейки, которые чаще всего выбирают наши клиенты. Любую позицию можно адаптировать под ваши требования.</p>
+          </div>
+          <div class="catalog-grid">
+            <article class="catalog-card">
+              <strong>Реагенты для водоподготовки</strong>
+              <p>Флокулянты, коагулянты, корректоры pH и реагенты для мембранных систем.</p>
+              <ul>
+                <li>Промышленная очистка</li>
+                <li>Тепловые сети</li>
+                <li>Пищевые предприятия</li>
+              </ul>
             </article>
-            <article class="stat-card">
-              <strong>350+</strong>
-              <span>ассортимент химических реагентов</span>
+            <article class="catalog-card">
+              <strong>Композиты и смолы</strong>
+              <p>Эпоксидные, полиэфирные и полиуретановые системы для композитного производства.</p>
+              <ul>
+                <li>Натяжные конструкции</li>
+                <li>Авиастроение</li>
+                <li>Малые архитектурные формы</li>
+              </ul>
             </article>
-            <article class="stat-card">
-              <strong>∞</strong>
-              <span>вариантов индивидуальных решений</span>
+            <article class="catalog-card">
+              <strong>Чистящие составы</strong>
+              <p>Высокотехнологичные очистители и обезжириватели для промышленного оборудования.</p>
+              <ul>
+                <li>Линии розлива</li>
+                <li>Медицинская техника</li>
+                <li>Электроника</li>
+              </ul>
+            </article>
+            <article class="catalog-card">
+              <strong>Упаковочные решения</strong>
+              <p>Фирменные канистры, защитная тара и адаптивная маркировка для безопасных поставок.</p>
+              <ul>
+                <li>Пищевые концентраты</li>
+                <li>Косметическая продукция</li>
+                <li>Технические жидкости</li>
+              </ul>
             </article>
           </div>
-          <a class="cta-button" href="contacts.html">Запросить прайс</a>
+          <div class="catalog-highlight">
+            <strong>Не нашли нужную позицию?</strong>
+            <p>
+              Соберём кастомный комплект реагентов и упаковки. Поможем с сертификацией и адаптацией технологической документации под ваш регион.
+            </p>
+            <a class="button button--ghost" href="contacts.html">Оставить запрос</a>
+          </div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="molecule">
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
+      </section>
+
+      <section class="section cta">
+        <div class="container">
+          <div class="cta__card">
+            <div>
+              <p class="eyebrow">Доступно по подписке</p>
+              <h2>Обновляем ассортимент ежемесячно</h2>
+              <p>
+                Подпишитесь на рассылку, чтобы получать обновления каталога, кейсы и предложения по оптимизации расходов.
+              </p>
+            </div>
+            <a class="button button--accent" href="contacts.html">Подписаться</a>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="../index.html">flagman</a>
+          <p>Инженерим химию будущего и превращаем сложные процессы в аккуратные продукты.</p>
+        </div>
+        <div class="footer__links">
+          <a href="../index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="about.html">О нас</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+        <div class="footer__contact">
+          <span>Уфа, ул. Индустриальная, 12</span>
+          <a href="tel:+73472000000">+7 (347) 200-00-00</a>
+          <a href="mailto:hello@flagman.ru">hello@flagman.ru</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

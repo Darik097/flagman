@@ -6,65 +6,115 @@
     <title>Контакты — flagman</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a class="brand" href="../index.html">flagman</a>
-        <div class="nav-links">
-          <a class="nav-link" href="../index.html">Главная</a>
-          <a class="nav-link" href="catalog.html">Каталог</a>
-          <a class="nav-link" href="about.html">О нас</a>
-          <a class="nav-link is-active" href="contacts.html">Контакты</a>
-        </div>
-        <div class="social-links">
-          <a class="social-circle" href="https://vk.com">VK</a>
-          <a class="social-circle" href="tel:+73472000000">☎</a>
-        </div>
-      </nav>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar" aria-label="Основная навигация">
+          <a class="brand" href="../index.html">flagman</a>
+          <div class="navbar__menu">
+            <a class="menu-link" href="../index.html">Главная</a>
+            <a class="menu-link" href="catalog.html">Каталог</a>
+            <a class="menu-link" href="about.html">О нас</a>
+            <a class="menu-link is-current" href="contacts.html">Контакты</a>
+          </div>
+          <div class="navbar__actions">
+            <a class="circle-link" href="https://vk.com" aria-label="Мы во ВКонтакте">VK</a>
+            <a class="circle-link" href="tel:+73472000000" aria-label="Позвонить">☎</a>
+          </div>
+        </nav>
+      </div>
     </header>
-    <main class="main-wrapper">
-      <section class="hero">
-        <div class="hero-card">
-          <h1>Получите консультацию</h1>
-          <p>
-            Оставьте контакты, и мы свяжемся с вами для подбора химической продукции, расчёта поставок и логистики.
-          </p>
-          <form class="stats-grid" action="#" method="post">
-            <label class="stat-card">
-              <span>Ваше имя</span>
-              <input type="text" name="name" placeholder="Иван" required />
-            </label>
-            <label class="stat-card">
-              <span>Компания</span>
-              <input type="text" name="company" placeholder="ООО &ldquo;Прогресс&rdquo;" />
-            </label>
-            <label class="stat-card">
-              <span>Телефон</span>
-              <input type="tel" name="phone" placeholder="+7 (347) 200-00-00" required />
-            </label>
-            <button class="cta-button" type="submit">Отправить заявку</button>
-          </form>
+
+    <main class="site-main">
+      <section class="page-hero">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <p class="eyebrow">Контакты</p>
+            <h1>Давайте обсудим задачу</h1>
+            <p>
+              Мы ответим в течение рабочего дня и предложим несколько форматов сотрудничества. Укажите удобный способ связи и кратко опишите запрос.
+            </p>
+            <div class="contact-details">
+              <span>Уфа, ул. Индустриальная, 12</span>
+              <a href="tel:+73472000000">+7 (347) 200-00-00</a>
+              <a href="mailto:hello@flagman.ru">hello@flagman.ru</a>
+              <span>Работаем: пн—пт, 09:00–19:00</span>
+            </div>
+            <div class="badge-list" role="list">
+              <span class="badge" role="listitem">Есть NDA</span>
+              <span class="badge" role="listitem">Экспресс-консультация 30 мин</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <form class="form-grid" action="#" method="post">
+              <label class="form-field">
+                <span>Имя</span>
+                <input type="text" name="name" placeholder="Иван" required />
+              </label>
+              <label class="form-field">
+                <span>Компания</span>
+                <input type="text" name="company" placeholder="ООО &ldquo;Прогресс&rdquo;" />
+              </label>
+              <label class="form-field">
+                <span>Телефон</span>
+                <input type="tel" name="phone" placeholder="+7 (347) 200-00-00" required />
+              </label>
+              <label class="form-field">
+                <span>Email</span>
+                <input type="email" name="email" placeholder="you@company.ru" />
+              </label>
+              <label class="form-field">
+                <span>Запрос</span>
+                <textarea name="message" placeholder="Опишите проект или задачу" required></textarea>
+              </label>
+              <div class="form-actions">
+                <button class="button button--accent" type="submit">Отправить заявку</button>
+              </div>
+            </form>
+          </div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="molecule">
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
+      </section>
+
+      <section class="section cta">
+        <div class="container">
+          <div class="cta__card">
+            <div>
+              <p class="eyebrow">Встречи онлайн и офлайн</p>
+              <h2>Назначим демо-показ материалов</h2>
+              <p>
+                Проведём презентацию на вашей площадке или в нашем шоуруме, покажем образцы и расскажем об условиях сотрудничества.
+              </p>
+            </div>
+            <a class="button button--accent" href="tel:+73472000000">Позвонить сейчас</a>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="../index.html">flagman</a>
+          <p>Инженерим химию будущего и превращаем сложные процессы в аккуратные продукты.</p>
+        </div>
+        <div class="footer__links">
+          <a href="../index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="about.html">О нас</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+        <div class="footer__contact">
+          <span>Уфа, ул. Индустриальная, 12</span>
+          <a href="tel:+73472000000">+7 (347) 200-00-00</a>
+          <a href="mailto:hello@flagman.ru">hello@flagman.ru</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

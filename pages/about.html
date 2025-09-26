@@ -6,66 +6,163 @@
     <title>О компании — flagman</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar">
-        <a class="brand" href="../index.html">flagman</a>
-        <div class="nav-links">
-          <a class="nav-link" href="../index.html">Главная</a>
-          <a class="nav-link" href="catalog.html">Каталог</a>
-          <a class="nav-link is-active" href="about.html">О нас</a>
-          <a class="nav-link" href="contacts.html">Контакты</a>
-        </div>
-        <div class="social-links">
-          <a class="social-circle" href="https://vk.com">VK</a>
-          <a class="social-circle" href="tel:+73472000000">☎</a>
-        </div>
-      </nav>
+    <header class="site-header">
+      <div class="container">
+        <nav class="navbar" aria-label="Основная навигация">
+          <a class="brand" href="../index.html">flagman</a>
+          <div class="navbar__menu">
+            <a class="menu-link" href="../index.html">Главная</a>
+            <a class="menu-link" href="catalog.html">Каталог</a>
+            <a class="menu-link is-current" href="about.html">О нас</a>
+            <a class="menu-link" href="contacts.html">Контакты</a>
+          </div>
+          <div class="navbar__actions">
+            <a class="circle-link" href="https://vk.com" aria-label="Мы во ВКонтакте">VK</a>
+            <a class="circle-link" href="tel:+73472000000" aria-label="Позвонить">☎</a>
+          </div>
+        </nav>
+      </div>
     </header>
-    <main class="main-wrapper">
-      <section class="hero">
-        <div class="hero-card">
-          <h1>Мы — команда flagman</h1>
-          <p>
-            Наша миссия — делать химические продукты эстетичными и понятными. Мы соединяем научный подход с вниманием к деталям и
-            создаём решения, которые вдохновляют.
-          </p>
-          <div class="stats-grid">
-            <article class="stat-card">
-              <strong>12</strong>
-              <span>лабораторий-партнёров по всей России</span>
+
+    <main class="site-main">
+      <section class="page-hero">
+        <div class="container page-hero__layout">
+          <div class="page-hero__card">
+            <p class="eyebrow">О компании</p>
+            <h1>Мы выстраиваем культуру химических инноваций</h1>
+            <p>
+              Flagman объединяет инженеров, химиков, дизайнеров и стратегов. Мы видим красоту в точности формул и считаем, что современные химические продукты должны быть понятными, безопасными и впечатляющими визуально.
+            </p>
+            <div class="badge-list" role="list">
+              <span class="badge" role="listitem">Основаны в 2015</span>
+              <span class="badge" role="listitem">R&amp;D центр — Уфа</span>
+              <span class="badge" role="listitem">Проекты в 6 странах</span>
+            </div>
+          </div>
+          <div class="page-hero__card">
+            <strong>Команда flagman</strong>
+            <p>
+              Наша структура устроена вокруг проектных ядер. Для каждого клиента мы собираем кросс-функциональную команду, которая ведёт продукт от гипотезы до масштабного производства.
+            </p>
+            <div class="values-grid">
+              <div class="values-card">
+                <strong>Аналитики</strong>
+                <p>Исследуют рынок, следят за нормативами и проверяют гипотезы на устойчивость.</p>
+              </div>
+              <div class="values-card">
+                <strong>Инженеры</strong>
+                <p>Проектируют рецептуры, контролируют пилотные партии и внедряют производство.</p>
+              </div>
+              <div class="values-card">
+                <strong>Дизайнеры</strong>
+                <p>Формируют визуальный язык продукта, интерфейсы для операторов и упаковку.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Ценности</p>
+            <h2>Технологичность, открытость и ответственность</h2>
+            <p>
+              Мы выстраиваем долгосрочные отношения с партнёрами и инвестируем в устойчивые процессы. Уделяем внимание деталям, которые создают доверие: прозрачная коммуникация, аккуратная документация и дизайн, отражающий уровень продукта.
+            </p>
+          </div>
+          <div class="values-grid">
+            <article class="values-card">
+              <strong>Партнёрство</strong>
+              <p>Открыто делимся прогрессом, подстраиваемся под процессы клиентов и остаёмся на связи после внедрения.</p>
             </article>
-            <article class="stat-card">
-              <strong>48</strong>
-              <span>специалистов команды, от инженеров до дизайнеров</span>
+            <article class="values-card">
+              <strong>Инновации</strong>
+              <p>Проводим эксперименты в собственных лабораториях, тестируем материалы и внедряем лучшие практики отрасли.</p>
             </article>
-            <article class="stat-card">
-              <strong>200%</strong>
-              <span>рост доверия клиентов за последние 2&nbsp;года</span>
+            <article class="values-card">
+              <strong>Ответственность</strong>
+              <p>Следуем ESG-стандартам, внедряем безопасные методы утилизации и оптимизируем ресурсы.</p>
+            </article>
+            <article class="values-card">
+              <strong>Эстетика</strong>
+              <p>Понимаем важность визуальной коммуникации. Каждое решение сопровождается продуманным дизайном.</p>
             </article>
           </div>
-          <a class="cta-button" href="contacts.html">Познакомиться</a>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="molecule">
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="atom"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
-            <span class="connector"></span>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Как мы работаем</p>
+            <h2>Этапы взаимодействия с заказчиком</h2>
+            <p>
+              Превращаем сложные задачи в прозрачный процесс: вы всегда знаете, на каком этапе находится проект и какие шаги нас ждут дальше.
+            </p>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <strong>01. Диагностика</strong>
+              <p>Собираем данные о текущих процессах, проводим аудит лабораторий и оцениваем технологический стек.</p>
+            </article>
+            <article class="timeline-item">
+              <strong>02. Проектирование</strong>
+              <p>Формируем гипотезы, подбираем реагенты, создаём прототипы и план пилотного запуска.</p>
+            </article>
+            <article class="timeline-item">
+              <strong>03. Внедрение</strong>
+              <p>Настраиваем поставки, обучаем команду заказчика и сопровождаем запуск до выхода на мощность.</p>
+            </article>
+            <article class="timeline-item">
+              <strong>04. Поддержка</strong>
+              <p>Обеспечиваем контроль качества, оптимизацию процессов и обновление дизайна продукта.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section cta">
+        <div class="container">
+          <div class="cta__card">
+            <div>
+              <p class="eyebrow">Готовы к диалогу</p>
+              <h2>Найдем формат сотрудничества</h2>
+              <p>
+                Опишите ваш вызов, и мы подготовим стратегию: от консультации по отдельной линии до полного строительства химического направления.
+              </p>
+            </div>
+            <a class="button button--accent" href="contacts.html">Связаться с командой</a>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="site-footer">
+      <div class="container footer__grid">
+        <div class="footer__brand">
+          <a class="brand" href="../index.html">flagman</a>
+          <p>Инженерим химию будущего и превращаем сложные процессы в аккуратные продукты.</p>
+        </div>
+        <div class="footer__links">
+          <a href="../index.html">Главная</a>
+          <a href="catalog.html">Каталог</a>
+          <a href="about.html">О нас</a>
+          <a href="contacts.html">Контакты</a>
+        </div>
+        <div class="footer__contact">
+          <span>Уфа, ул. Индустриальная, 12</span>
+          <a href="tel:+73472000000">+7 (347) 200-00-00</a>
+          <a href="mailto:hello@flagman.ru">hello@flagman.ru</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
